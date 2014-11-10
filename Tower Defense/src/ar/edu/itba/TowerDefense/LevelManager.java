@@ -67,7 +67,7 @@ public class LevelManager {
 			GameEngine.getInstance().setPaths(aux5,aux6);
 			break;
 		case 4:
-			Vector3[] aux7 = {new Vector3(0,410,2),new Vector3(220,410,2),new Vector3(220,630,3),new Vector3(810,630,2),new Vector3(810,130,0),new Vector3(1300,130,2)};
+			Vector3[] aux7 = {new Vector3(0,410,2),new Vector3(220,410,2),new Vector3(220,615,3),new Vector3(810,615,2),new Vector3(810,130,0),new Vector3(1300,130,2)};
 			Vector3[] aux8 = {new Vector3(0,410,2),new Vector3(220,410,2),new Vector3(220,200,0),new Vector3(660,200,2),new Vector3(660,410,3),new Vector3(440,410,1),new Vector3(440,740,0)};
 			GameEngine.getInstance().setPaths(aux7,aux8);
 			break;
