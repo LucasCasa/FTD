@@ -155,6 +155,7 @@ public class PurpleTower extends Tower implements Logical{
 			break;
 		case 4:
 			super.ultimate = true;
+			attackDamage = 100;
 			System.out.println("LVLMAX");
 			break;
 		default:

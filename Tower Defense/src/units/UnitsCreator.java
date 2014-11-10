@@ -205,7 +205,7 @@ public class UnitsCreator {
 		return u;
 	}
 	public  Unit createAssasin( int posx,int  posy){
-		Unit u = new Unit(posx, posy, 16,22,175,50,1,70,Assets.ASSASSINS_REFERENCE,"Assasin");
+		Unit u = new Unit(posx, posy, 16,22,175,50,1,15,Assets.ASSASSINS_REFERENCE,"Assasin");
 		return u;
 	}
 	public UnitUI createAssasinUI(int posx, int posy, Unit u){
@@ -218,7 +218,7 @@ public class UnitsCreator {
 		return ui;
 	}
 	public  Unit createYetti( int posx,int  posy){
-		Unit u = new Unit(posx, posy, 50,45,500,20,0.8f,100,Assets.YETTI_REFERENCE,"Yetti");
+		Unit u = new Unit(posx, posy, 50,45,500,20,0.8f,60,Assets.YETTI_REFERENCE,"Yetti");
 		return u;
 	}
 	public UnitUI createYettiUI(int posx, int posy, Unit u){
@@ -231,7 +231,7 @@ public class UnitsCreator {
 		return ui;
 	}
 	public  Unit createOgre( int posx,int  posy){
-		Unit u = new Unit(posx, posy, 35,37,50,40,0.6f,100,Assets.OGRE_REFERENCE,"Ogro");
+		Unit u = new Unit(posx, posy, 35,37,250,40,0.6f,50,Assets.OGRE_REFERENCE,"Ogro");
 		return u;
 	}
 	
@@ -241,12 +241,12 @@ public class UnitsCreator {
 		int[] drawPosY = {100,0,0,50,150};
 		int[] drawPosX = {35,36,36,34,45}; 
 		float[] animcant = {13,14,14,13,10};
-		UnitUI ui = new UnitUI(u,Assets.ogros,Assets.ogros,posx,posy,width,heigth,drawPosX,drawPosY,animcant,0.1f,150);
+		UnitUI ui = new UnitUI(u,Assets.ogros,Assets.ogros,posx,posy,width,heigth,drawPosX,drawPosY,animcant,0.1f,250);
 		return ui;
 	}
 	
 	public  Unit createZombie( int posx,int  posy){
-		Unit u = new Unit(posx, posy, 18,24,80,40,1,100,Assets.ZOMBIE_REFERENCE,"Zombie");
+		Unit u = new Unit(posx, posy, 18,24,80,40,1,10,Assets.ZOMBIE_REFERENCE,"Zombie");
 		return u;
 	}
 	
@@ -261,7 +261,7 @@ public class UnitsCreator {
 	}
 	
 	public Unit createDemon(int posx, int posy){
-		Unit u = new Unit(posx, posy,27,37,100,40,0.9f,50,Assets.DEMON_REFERENCE,"Demonio");
+		Unit u = new Unit(posx, posy,27,37,120,40,0.9f,15,Assets.DEMON_REFERENCE,"Demonio");
 		return u;
 	}
 	public UnitUI createDemonUI(int posx, int posy, Unit u){
@@ -270,11 +270,11 @@ public class UnitsCreator {
 		int[] drawPosY = {80,0,0,40,0};
 		int[] drawPosX = {27,27,27,27,82};
 		float[] animcant = {12,12,12,12,12};
-		UnitUI ui = new UnitUI(u,Assets.demon,Assets.demonDeath,posx,posy,width,heigth,drawPosX,drawPosY,animcant,0.05f,100);
+		UnitUI ui = new UnitUI(u,Assets.demon,Assets.demonDeath,posx,posy,width,heigth,drawPosX,drawPosY,animcant,0.05f,120);
 		return ui;
 	}
 	public Unit createBlueSpider(int posx, int posy){
-		return new Unit(posx, posy, 54,39,150,40,0.8f,80,Assets.BLUE_SPIDER_REFERENCE,"Ara�a Azul");
+		return new Unit(posx, posy, 54,39,150,50,0.8f,20,Assets.BLUE_SPIDER_REFERENCE,"Ara�a Azul");
 	}
 	public UnitUI createBlueSpiderUI(int posx, int posy, Unit u){
 		float[] width = {50,54,54,50,65};
@@ -285,7 +285,7 @@ public class UnitsCreator {
 		return new UnitUI(u,Assets.blueSpider,Assets.blueSpider,posx,posy,width,heigth,drawPosX, drawPosY,animcant,0.05f,150);
 	}
 	public Unit createGreenSpider(int posx, int posy){
-		return new Unit(posx, posy, 44,33,150,40,1,80,Assets.GREEN_SPIDER_REFERENCE,"Ara�a Verde");
+		return new Unit(posx, posy, 44,33,100,60,1,20,Assets.GREEN_SPIDER_REFERENCE,"Ara�a Verde");
 	}
 	public UnitUI createGreenSpiderUI(int posx, int posy, Unit u){
 		float[] width = {43,46,46,44,56};
@@ -293,11 +293,11 @@ public class UnitsCreator {
 		int[] drawPosY = {100,0,0,50,150};
 		int[] drawPosX = {50,50,50,50,60};
 		float[] animcant = {13,13,13,13,15};
-		return new UnitUI(u,Assets.greenSpider,Assets.greenSpider,posx,posy,width,heigth,drawPosX, drawPosY,animcant,0.05f,150);
+		return new UnitUI(u,Assets.greenSpider,Assets.greenSpider,posx,posy,width,heigth,drawPosX, drawPosY,animcant,0.05f,100);
 	}
 	
 	public Unit createBlackGargoyle(int posx, int posy){
-		return new Unit(posx, posy, 33,42,80,60,0.5f,50,Assets.BLACK_GARGOYLE_REFERENCE,"Gargola Negra");
+		return new Unit(posx, posy, 33,42,80,60,0.5f,10,Assets.BLACK_GARGOYLE_REFERENCE,"Gargola Negra");
 	}
 	public UnitUI createBlackGargoyleUI(int posx, int posy,Unit u){
 		float[] width = {46,33,33,46,47};
@@ -308,7 +308,7 @@ public class UnitsCreator {
 		return new UnitUI(u,Assets.blackGargoyle,Assets.blackGargoyle,posx,posy,width,heigth,drawPosX,drawPosY,animcant,0.05f,80);
 	}
 	public Unit createRedGoblin(int posx, int posy){
-		return new Unit(posx, posy, 17,22,100,50,1f,30,Assets.BASIC_DEMON_REFERENCE,"Goblin Rojo");
+		return new Unit(posx, posy, 17,22,50,50,1f,5,Assets.BASIC_DEMON_REFERENCE,"Goblin Rojo");
 	}
 	public UnitUI createRedGoblinUI(int posx, int posy, Unit u){
 		float[] width = {16,18,18,16,41};
@@ -316,10 +316,10 @@ public class UnitsCreator {
 		int[] drawPosY = {60,0,0,30,0};
 		int[] drawPosX = {16,18,18,16,82};
 		float[] animcant = {12,12,12,12,12};
-		return new UnitUI(u,Assets.redGoblin,Assets.demonDeath,posx,posy,width,heigth,drawPosX,drawPosY,animcant,0.05f,100);
+		return new UnitUI(u,Assets.redGoblin,Assets.demonDeath,posx,posy,width,heigth,drawPosX,drawPosY,animcant,0.05f,50);
 	}
 	public Unit createBrownGoblin(int posx, int posy){
-		return new Unit(posx, posy, 20,24,75,50,1f,20,Assets.BASIC_REFERENCE,"Goblin Comun");
+		return new Unit(posx, posy, 20,24,60,50,1f,5,Assets.BASIC_REFERENCE,"Goblin Comun");
 	}
 	public UnitUI createBrownGoblinUI(int posx, int posy, Unit u){
 		float[] width = {17,20,20,19,23};
@@ -327,11 +327,11 @@ public class UnitsCreator {
 		int[] drawPosY = {60,0,0,30,90};
 		int[] drawPosX = {17,20,20,19,23};
 		float[] animcant = {12,12,12,12,5};
-		return new UnitUI(u,Assets.brownGoblin,Assets.brownGoblin,posx,posy,width,heigth,drawPosX,drawPosY,animcant,0.05f,75);
+		return new UnitUI(u,Assets.brownGoblin,Assets.brownGoblin,posx,posy,width,heigth,drawPosX,drawPosY,animcant,0.05f,60);
 	}
 	
 	public Unit createRedGargoyle(int posx, int posy){
-		return new Unit(posx, posy, 36,48,100,50,0.4f,60,Assets.RED_GARGOYLE_REFERENCE,"Gargola Roja");
+		return new Unit(posx, posy, 36,48,60,80,0.4f,20,Assets.RED_GARGOYLE_REFERENCE,"Gargola Roja");
 	}
 
 	public UnitUI createRedGargoyleUI(int posx, int posy, Unit u){
@@ -340,10 +340,10 @@ public class UnitsCreator {
 		int[] drawPosY = {100,0,0,50,0};
 		int[] drawPosX = {48,36,36,48,82};
 		float[] animcant = {7,7,7,7,12};
-		return new UnitUI(u,Assets.redGargoyle,Assets.demonDeath,posx,posy,width,heigth,drawPosX,drawPosY,animcant,0.05f,100);
+		return new UnitUI(u,Assets.redGargoyle,Assets.demonDeath,posx,posy,width,heigth,drawPosX,drawPosY,animcant,0.05f,60);
 	}
 	public Unit createTree(int posx, int posy){
-		return new Unit(posx, posy, 36,47,1000,10,0.2f,200,Assets.TREE_REFERENCE,"�rbol");
+		return new Unit(posx, posy, 36,47,1000,20,0.2f,200,Assets.TREE_REFERENCE,"�rbol");
 	}
 	public UnitUI createTreeUI(int posx, int posy, Unit u){
 		float[] width = {35,36,36,35,34};
@@ -354,7 +354,7 @@ public class UnitsCreator {
 		return new UnitUI(u,Assets.tree,Assets.tree,posx,posy,width,heigth,drawPosX,drawPosY,animcant,0.1f,1000);
 	}
 	public Unit createGladiator(int posx, int posy){
-		return new Unit(posx, posy, 33,40,100,50,1f,50,Assets.GLADIATIOR_REFERENCE,"Gladiador");
+		return new Unit(posx, posy, 33,40,120,50,1f,20,Assets.GLADIATIOR_REFERENCE,"Gladiador");
 	}
 	public UnitUI createGladiatorUI(int posx, int posy, Unit u){
 		float[] width = {33,33,33,31,37};
@@ -362,10 +362,10 @@ public class UnitsCreator {
 		int[] drawPosY = {100,0,0,50,150};
 		int[] drawPosX = {33,33,33,31,37};
 		float[] animcant = {13,12,12,12,9};
-		return new UnitUI(u,Assets.gladiator,Assets.gladiator,posx,posy,width,heigth,drawPosX,drawPosY,animcant,0.1f,100);
+		return new UnitUI(u,Assets.gladiator,Assets.gladiator,posx,posy,width,heigth,drawPosX,drawPosY,animcant,0.1f,120);
 	}
 	public Unit createArmoredDemon(int posx, int posy){
-		return new Unit(posx, posy, 30,39,150,20,0.4f,70,Assets.ARMORED_DEMON_REFERENCE,"DemonioA");
+		return new Unit(posx, posy, 30,39,150,35,0.4f,40,Assets.ARMORED_DEMON_REFERENCE,"DemonioA");
 	}
 	public UnitUI createArmoredDemonUI(int posx, int posy, Unit u){
 		float[] width = {30,30,30,30,40};
