@@ -1,0 +1,130 @@
+verde.jpg
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+a5
+  rotate: false
+  xy: 46, 2
+  size: 18, 25
+  orig: 18, 25
+  offset: 0, 0
+  index: -1
+a1
+  rotate: false
+  xy: 28, 2
+  size: 16, 25
+  orig: 16, 25
+  offset: 0, 0
+  index: -1
+ad7
+  rotate: false
+  xy: 173, 2
+  size: 21, 26
+  orig: 21, 26
+  offset: 0, 0
+  index: -1
+ad3
+  rotate: false
+  xy: 136, 2
+  size: 15, 25
+  orig: 15, 25
+  offset: 0, 0
+  index: -1
+a6
+  rotate: false
+  xy: 46, 2
+  size: 18, 25
+  orig: 18, 25
+  offset: 0, 0
+  index: -1
+a2
+  rotate: false
+  xy: 28, 2
+  size: 16, 25
+  orig: 16, 25
+  offset: 0, 0
+  index: -1
+ad8
+  rotate: false
+  xy: 196, 2
+  size: 21, 26
+  orig: 21, 26
+  offset: 0, 0
+  index: -1
+ad4
+  rotate: false
+  xy: 153, 2
+  size: 18, 26
+  orig: 18, 26
+  offset: 0, 0
+  index: -1
+ad0
+  rotate: false
+  xy: 112, 2
+  size: 22, 21
+  orig: 22, 21
+  offset: 0, 0
+  index: -1
+a7
+  rotate: false
+  xy: 66, 2
+  size: 21, 26
+  orig: 21, 26
+  offset: 0, 0
+  index: -1
+a3
+  rotate: false
+  xy: 28, 2
+  size: 16, 25
+  orig: 16, 25
+  offset: 0, 0
+  index: -1
+ad5
+  rotate: false
+  xy: 153, 2
+  size: 18, 26
+  orig: 18, 26
+  offset: 0, 0
+  index: -1
+ad1
+  rotate: false
+  xy: 136, 2
+  size: 15, 25
+  orig: 15, 25
+  offset: 0, 0
+  index: -1
+a8
+  rotate: false
+  xy: 66, 2
+  size: 21, 26
+  orig: 21, 26
+  offset: 0, 0
+  index: -1
+a0
+  rotate: false
+  xy: 2, 2
+  size: 24, 21
+  orig: 24, 21
+  offset: 0, 0
+  index: -1
+ad6
+  rotate: false
+  xy: 173, 2
+  size: 21, 26
+  orig: 21, 26
+  offset: 0, 0
+  index: -1
+ad2
+  rotate: false
+  xy: 136, 2
+  size: 15, 25
+  orig: 15, 25
+  offset: 0, 0
+  index: -1
+a9
+  rotate: false
+  xy: 89, 2
+  size: 21, 26
+  orig: 21, 26
+  offset: 0, 0
+  index: -1

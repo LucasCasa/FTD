@@ -1,0 +1,74 @@
+golpemagia.png
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+01
+  rotate: false
+  xy: 2, 219
+  size: 25, 24
+  orig: 25, 24
+  offset: 0, 0
+  index: -1
+010
+  rotate: false
+  xy: 2, 2
+  size: 27, 26
+  orig: 27, 26
+  offset: 0, 0
+  index: -1
+02
+  rotate: false
+  xy: 2, 194
+  size: 26, 23
+  orig: 26, 23
+  offset: 0, 0
+  index: -1
+03
+  rotate: false
+  xy: 2, 245
+  size: 25, 24
+  orig: 25, 24
+  offset: 0, 0
+  index: -1
+04
+  rotate: false
+  xy: 2, 86
+  size: 27, 25
+  orig: 27, 25
+  offset: 0, 0
+  index: -1
+05
+  rotate: false
+  xy: 2, 168
+  size: 26, 24
+  orig: 26, 24
+  offset: 0, 0
+  index: -1
+06
+  rotate: false
+  xy: 2, 30
+  size: 27, 26
+  orig: 27, 26
+  offset: 0, 0
+  index: -1
+07
+  rotate: false
+  xy: 2, 58
+  size: 27, 26
+  orig: 27, 26
+  offset: 0, 0
+  index: -1
+08
+  rotate: true
+  xy: 2, 141
+  size: 25, 26
+  orig: 25, 26
+  offset: 0, 0
+  index: -1
+09
+  rotate: false
+  xy: 2, 113
+  size: 26, 26
+  orig: 26, 26
+  offset: 0, 0
+  index: -1
