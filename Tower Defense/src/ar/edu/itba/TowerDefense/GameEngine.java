@@ -44,13 +44,13 @@ public class GameEngine {
 			units.getBack().get(i).update();	
 		}
 		
-		if(units.size() == 0){
+		if(units.size() == 0 && !victory){
 			waveNumber++;
 			UnitsCreator.getInstance().loadWave(LevelManager.getInstance().getLevel(),waveNumber, paths);
 		}
 		if( waveNumber > maxWave){
 			victory = true;
-			LevelManager.getInstance().gotoMenu();
+			//LevelManager.getInstance().gotoMenu();
 		}
 		
 		if(life == 0){

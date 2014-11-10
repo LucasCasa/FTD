@@ -85,6 +85,7 @@ public class InterfaceManager {
 			
 			if(GameEngine.getInstance().getVictory()){
 				batch.draw(Assets.victory, Gdx.graphics.getWidth() / 2 - Assets.victory.getWidth() / 2, Gdx.graphics.getHeight() / 2 - Assets.victory.getHeight() / 2);
+				batch.draw(Assets.backBTN,400, 50);
 			}
 			
 			
