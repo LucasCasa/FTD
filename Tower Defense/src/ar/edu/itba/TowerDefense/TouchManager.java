@@ -36,6 +36,12 @@ public class TouchManager {
 			if(x >= 400 && x<= 400 + Assets.backBTN.getWidth() && y>= 50 && y<= 50 + Assets.backBTN.getHeight()){
 				LevelManager.getInstance().gotoMenu();	
 			}
+		}else if( GameEngine.getInstance().getDefeat()){
+			if(x >= 400 && x<= 400 + Assets.backBTN.getWidth() && y>= 100 && y<= 100 + Assets.backBTN.getHeight()){
+				LevelManager.getInstance().gotoMenu();	
+			}else if(x >= 400 && x<= 400 + Assets.backBTN.getWidth() && y>= 400 && y<= 400 + Assets.backBTN.getHeight()){
+				LevelManager.getInstance().setLevel(LevelManager.getInstance().getLevel());
+			}
 		}else{
 			if(InterfaceManager.getInstance().getNewTower()){
 				calculateSelectNewTower(x,y);

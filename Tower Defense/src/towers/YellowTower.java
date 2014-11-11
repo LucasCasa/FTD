@@ -38,7 +38,7 @@ public class YellowTower extends Tower implements Logical{
 		boolean flag = false;
 		boolean someone = false;
 		attackTime +=Gdx.graphics.getDeltaTime();
-		if(attackTime >= 2){
+		if(attackTime >= 1f){
 			attacking = true;
 				for(int i = 0; i<unit.size() ;i++){
 					int x = unit.get(i).getX();

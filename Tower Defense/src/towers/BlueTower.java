@@ -34,7 +34,7 @@ public class BlueTower extends Tower implements Logical{
 	public BlueTower(int x, int y){
 		ID = 3;
 		attackReady = false;
-		attackDamage = 30;
+		attackDamage = 40;
 		range = 150;
 		pos = new Vector2(x,y);
 		attackPos = new Vector2(pos.x + Main.GRIDSIZE / 2,pos.y + Main.GRIDSIZE / 2); 

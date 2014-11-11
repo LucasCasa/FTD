@@ -27,6 +27,7 @@ public class GameEngine {
 	public int waveNumber = 0;
 	public int maxWave = 0;
 	private boolean victory;
+	private boolean defeat;
 	
 	private GameEngine(){
 		towers = new TowerArrayList();
@@ -36,6 +37,7 @@ public class GameEngine {
 	 * metodo que se ejecuta en loop y que se encarga de manejar toda la logica del nivel.
 	 */
 	public void update(){
+		if(!defeat){
 		Collections.sort(uni);
 		if(waveNumber > maxWave){
 			
@@ -54,9 +56,10 @@ public class GameEngine {
 		}
 		
 		if(life == 0){
-			LevelManager.getInstance().gotoMenu();
+			defeat = true;
+			Assets.raySound.stop();
 		}
-		
+		}
 	}
 	
 	public static GameEngine getInstance(){
@@ -176,8 +179,12 @@ public class GameEngine {
 		Money.getInstance().amount = 150;
 		life = 10;
 		victory = false;
+		defeat = false;
 	//	for(int i = 0; i<pos.length;i++){
 	//		pos[i].z = 0;
 	//	}
+	}
+	public boolean getDefeat(){
+		return defeat;
 	}
 }

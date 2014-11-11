@@ -15,6 +15,8 @@ public class Assets { // todas las texturas
 	public static Texture playBTN = new Texture("jugarBTN.fw.png");
 	public static Texture exitBTN = new Texture("SALIRBTN.fw.png");
 	public static Texture backBTN = new Texture("volverBTN.fw.png");
+	public static Texture retryBTN = new Texture("retryBTN.png");
+	public static Texture menuBTN = new Texture("menuBTN.png");
 	public static Texture lvl1BackThumb = new Texture("lvl1backThumb.jpg");
 	public static Texture lvl2BackThumb = new Texture("lvl2backThumb.jpg");
 	public static Texture lvl3BackThumb = new Texture("lvl3backThumb.jpg");
@@ -23,7 +25,7 @@ public class Assets { // todas las texturas
 	public static Texture lvl6BackThumb = new Texture("lvl6backThumb.jpg");
 	
 	/*Fondos*/
-	public static Texture[] backlvl = {new Texture("back2.png"),new Texture("backlvl2.png"),new Texture("backlvl3.jpg"),new Texture("backlvl4.jpg"),new Texture("backlvl5.jpg"),new Texture("backlvl6.jpg")};
+	public static Texture[] backlvl = {new Texture("backlvl1.png"),new Texture("backlvl2.png"),new Texture("backlvl3.jpg"),new Texture("backlvl4.jpg"),new Texture("backlvl5.jpg"),new Texture("backlvl6.jpg")};
 	
 	/* Texturas de las torres*/
 	public static Texture magicP = new Texture("magic.fw.png");
@@ -86,7 +88,7 @@ public class Assets { // todas las texturas
 	public static Texture victory = new Texture("victory.png");
 	public static Texture armor = new Texture("Resistance.png");
 	public static Texture magicArmor = new Texture("magicResistance.png");
-	public static Texture[] info = {new Texture("rasho laser.fw.png"),new Texture("infoArchers.fw.png"),new Texture("BDS.fw.png"), new Texture("infoFrio.fw.png")};
+	public static Texture[] info = {new Texture("rayo laser.fw.png"),new Texture("infoArchers.fw.png"),new Texture("BDS.fw.png"), new Texture("infoFrio.fw.png")};
 	public static Texture avatar = new Texture("avatars.fw.png");
 	public static Texture avatarTowers = new Texture("avatarsTower.fw.png");
 	public static Texture rangeIcon = new Texture("rangeIcon.png");
@@ -97,7 +99,6 @@ public class Assets { // todas las texturas
 	public static Sound[] arrowRelease = {Gdx.audio.newSound(Gdx.files.internal("Sounds/ArrowRelease.mp3")),
 		  Gdx.audio.newSound(Gdx.files.internal("Sounds/ArrowRelease2.mp3"))};
 	public static Sound raySound = Gdx.audio.newSound(Gdx.files.internal("Sounds/raySound.mp3"));
-	public static Sound towerBuild = Gdx.audio.newSound(Gdx.files.internal("Sounds/Tower.mp3"));
 	public static Sound newPurple = Gdx.audio.newSound(Gdx.files.internal("Sounds/NewPurple.mp3"));
 	public static Sound newGreen = Gdx.audio.newSound(Gdx.files.internal("Sounds/NewArcher.mp3"));
 	public static Sound newYellow = Gdx.audio.newSound(Gdx.files.internal("Sounds/NewYellow.mp3"));

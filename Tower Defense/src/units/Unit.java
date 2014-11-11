@@ -3,6 +3,7 @@ package units;
 import ar.edu.itba.TowerDefense.Logical;
 
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.audio.Sound;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.math.Vector3;
 
@@ -44,11 +45,6 @@ public class Unit implements Logical , Comparable<Unit>{
 		actualArmor = armor;
 		mov = new Vector2(speed,0);
 		this.name = name;
-		if(posx <= 0){
-			finishLine = 1280;
-		}else{
-			finishLine = 0;
-		}
 	}
 	public void update(){
 		caminar();
@@ -64,7 +60,9 @@ public class Unit implements Logical , Comparable<Unit>{
 			
 		}
 		if(pos.x <= path[actpos].x + 3 && pos.x >= path[actpos].x - 3 && pos.y <= path[actpos].y + 3 && pos.y >= path[actpos].y - 3){
-			actpos++;
+			if(actpos < path.length){
+				actpos++;
+			}
 			newDirection = true;
 		}
 		switch( (int) path[actpos].z){
@@ -94,6 +92,7 @@ public class Unit implements Logical , Comparable<Unit>{
 	}
 	public void setnodes(int cant, Vector3[] path){
 		this.path = path;
+		finishLine = (int)path[path.length -1].x;
 		actpos = 0;
 		
 	}
@@ -162,7 +161,11 @@ public class Unit implements Logical , Comparable<Unit>{
 		}
 	}
 	public boolean hasWon(){
-		return ((pos.x >= finishLine && pos.x <= finishLine + 5) || (pos.y < -10 ));
+		if(finishLine <= 0){
+			return pos.x <= finishLine || pos.y < -10 ;
+		}else{
+			return pos.x >= finishLine || pos.y < -10;
+		}
 	}
 	public String getName(){
 		return name;

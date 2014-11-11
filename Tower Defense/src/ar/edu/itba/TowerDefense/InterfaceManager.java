@@ -50,45 +50,50 @@ public class InterfaceManager {
 		 */
 		public void draw(){
 			batch.draw(background, 0, 0,Gdx.graphics.getWidth(),Gdx.graphics.getHeight());
-			for(int i = 0; i<pos.length;i++){
-				if(pos[i].z == 0){
-					int l = (LevelManager.getInstance().getLevel() - 1) / 2;
-					batch.draw(Assets.newt[l], pos[i].x, pos[i].y, Main.GRIDSIZE, ((float) Main.GRIDSIZE / Assets.newt[l].getWidth()) * Assets.newt[l].getHeight() );
+			if(!GameEngine.getInstance().getDefeat()){
+				for(int i = 0; i<pos.length;i++){
+					if(pos[i].z == 0){
+						int l = (LevelManager.getInstance().getLevel() - 1) / 2;
+						batch.draw(Assets.newt[l], pos[i].x, pos[i].y, Main.GRIDSIZE, ((float) Main.GRIDSIZE / Assets.newt[l].getWidth()) * Assets.newt[l].getHeight() );
+					}
 				}
-			}
-			for(int i=0; i< towers.size();i++){
-				if(towers.getBack().get(i) != null){
-				GameEngine.getInstance().towerAttack(towers.getBack().get(i));
-				towers.getFront().get(i).draw();
-				}
-			}
-			for(int i = 0; i<units.size();i++){
-				units.getFront().get(i).draw();
-			}
-			
-			checkUnitshealth();
-			
-			for(int i = 0;i<towers.size();i++){
-				towers.getFront().get(i).drawAttack();
-			}
-			if(drawNew){
-				drawNewTowerCircle();
-			}else if(drawUpgrade){
-				drawUpgradeCircle();
-			}
 				
-			manageEffects();
+				for(int i=0; i< towers.size();i++){
+					if(towers.getBack().get(i) != null){
+						GameEngine.getInstance().towerAttack(towers.getBack().get(i));
+						towers.getFront().get(i).draw();
+					}
+				}
+				for(int i = 0; i<units.size();i++){
+					units.getFront().get(i).draw();
+				}
+			
+				checkUnitshealth();
+			
+				for(int i = 0;i<towers.size();i++){
+					towers.getFront().get(i).drawAttack();
+				}
+				if(drawNew){
+					drawNewTowerCircle();
+				}else if(drawUpgrade){
+					drawUpgradeCircle();
+				}
+				
+				manageEffects();
 		
-			manageTowerInfo();
+				manageTowerInfo();
 			
-			infoUnit.draw();
+				infoUnit.draw();
 			
-			if(GameEngine.getInstance().getVictory()){
-				batch.draw(Assets.victory, Gdx.graphics.getWidth() / 2 - Assets.victory.getWidth() / 2, Gdx.graphics.getHeight() / 2 - Assets.victory.getHeight() / 2);
-				batch.draw(Assets.backBTN,400, 50);
+				if(GameEngine.getInstance().getVictory()){
+					batch.draw(Assets.victory, Gdx.graphics.getWidth() / 2 - Assets.victory.getWidth() / 2, Gdx.graphics.getHeight() / 2 - Assets.victory.getHeight() / 2);
+					batch.draw(Assets.backBTN,400, 50);
+				}
+			
+			}else{
+				batch.draw(Assets.retryBTN, 400, 400);
+				batch.draw(Assets.menuBTN,  400, 100);
 			}
-			
-			
 		}
 		/*
 		 * Maneja el dibujo de la informacion de las torres

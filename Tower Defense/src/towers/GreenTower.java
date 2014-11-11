@@ -39,8 +39,8 @@ public class GreenTower extends Tower implements Logical{
 		archersPos = new Vector2(x + Main.GRIDSIZE / 2, y + 50);
 
 		attackTime = 4;
-		attackDamage = 20;
-		cooldown = 0.8f;
+		attackDamage = 30;
+		cooldown = 0.6f;
 		level = 1;
 		super.ultimate = false;
 	}
