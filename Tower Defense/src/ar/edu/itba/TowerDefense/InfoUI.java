@@ -64,13 +64,23 @@ public class InfoUI {
 		InterfaceManager.getInstance().batch.draw(Assets.infoBack,pos2,infoY);
 		InterfaceManager.getInstance().batch.draw(Assets.infoBack,pos3,infoY);
 		
-		InterfaceManager.getInstance().batch.draw(Assets.magicArmor,pos3 + 20 ,20 + infoY);
+		InterfaceManager.getInstance().batch.draw(Assets.magicArmor,pos3 + 30 ,10 + infoY);
 		InterfaceManager.getInstance().batch.draw(Assets.life,pos2 + 30,10 + infoY);
 		InterfaceManager.getInstance().batch.draw(Assets.avatar, pos1 + 20, 5 + infoY,u.getID() * 53,0,53,53);
 		
 		font.draw(batch, u.getName() , pos1 + 80, 40 + infoY);
 		font.draw(batch, aux, pos2 + 65, 40 + infoY);
-		
+		if(u.getArmor() > 1 ){
+			font.draw(batch, "No tiene", pos3 + 65, 40 + infoY);
+		}else if(u.getArmor() >= 0.8f){
+			font.draw(batch, "Baja", pos3 + 65, 40 + infoY);
+		}else if(u.getArmor() >= 0.6f){
+			font.draw(batch, "Media", pos3 + 65, 40 + infoY);
+		}else if(u.getArmor() >= 0.4f){
+			font.draw(batch, "Alta", pos3 + 65, 40 + infoY);
+		}else{
+			font.draw(batch, " Muy Alta", pos3 + 65, 40 + infoY);
+		}
 		if(u.getHealth() <= 0){
 			u = null;
 		}

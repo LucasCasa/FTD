@@ -59,8 +59,8 @@ public class Unit implements Logical , Comparable<Unit>{
 			speed = fullSpeed;
 			
 		}
-		if(pos.x <= path[actpos].x + 3 && pos.x >= path[actpos].x - 3 && pos.y <= path[actpos].y + 3 && pos.y >= path[actpos].y - 3){
-			if(actpos < path.length){
+		if(pos.x <= path[actpos].x + 5 && pos.x >= path[actpos].x - 5 && pos.y <= path[actpos].y + 5 && pos.y >= path[actpos].y - 5){
+			if(actpos < path.length -1){
 				actpos++;
 			}
 			newDirection = true;
@@ -92,7 +92,11 @@ public class Unit implements Logical , Comparable<Unit>{
 	}
 	public void setnodes(int cant, Vector3[] path){
 		this.path = path;
+		if(path[path.length - 1].x >= 1280 || path[path.length - 1].x <= 0){
 		finishLine = (int)path[path.length -1].x;
+		}else{
+			finishLine = 10000;
+		}
 		actpos = 0;
 		
 	}
@@ -179,5 +183,8 @@ public class Unit implements Logical , Comparable<Unit>{
 		}else{
 			actualArmor = armor;
 		}
+	}
+	public float getArmor(){
+		return armor;
 	}
 }
