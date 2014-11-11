@@ -53,7 +53,7 @@ public class InterfaceManager {
 			for(int i = 0; i<pos.length;i++){
 				if(pos[i].z == 0){
 					int l = (LevelManager.getInstance().getLevel() - 1) / 2;
-					batch.draw(Assets.newt[l], pos[i].x, pos[i].y + Main.GRIDSIZE / 3, Main.GRIDSIZE, ((float) Main.GRIDSIZE / Assets.newt[l].getWidth()) * Assets.newt[l].getHeight() );
+					batch.draw(Assets.newt[l], pos[i].x, pos[i].y, Main.GRIDSIZE, ((float) Main.GRIDSIZE / Assets.newt[l].getWidth()) * Assets.newt[l].getHeight() );
 				}
 			}
 			for(int i=0; i< towers.size();i++){
