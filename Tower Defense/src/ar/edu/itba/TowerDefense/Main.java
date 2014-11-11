@@ -1,6 +1,11 @@
 package ar.edu.itba.TowerDefense;
 
-import menu.MenuInterfaceManager;
+
+import ar.edu.itba.TowerDefense.back.LevelManager;
+import ar.edu.itba.TowerDefense.front.Assets;
+import ar.edu.itba.TowerDefense.front.InterfaceManager;
+import ar.edu.itba.TowerDefense.front.MyInputProcessor;
+import ar.edu.itba.TowerDefense.menu.MenuInterfaceManager;
 
 import com.badlogic.gdx.ApplicationAdapter;
 import com.badlogic.gdx.Gdx;
@@ -15,8 +20,6 @@ public class Main extends ApplicationAdapter {
 	public static final int GRIDSIZE = 72;
 	SpriteBatch batch;
 	Array<Sprite> d;
-	int j;
-	int j2;
 	BitmapFont font;
 	public static OrthographicCamera cam;
 	public boolean inMenu = true;
@@ -49,7 +52,7 @@ public class Main extends ApplicationAdapter {
 		Gdx.gl.glClearColor(0, 0, 0, 1);
 		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 		
-		batch.begin(); // All draws mus be between batch.begin and batch.end
+		batch.begin(); // All draws must be between batch.begin and batch.end
 		LevelManager.getInstance().update();
 		CharSequence str = "FPS: " + Gdx.graphics.getFramesPerSecond();
 		font.draw(batch, str, Gdx.graphics.getWidth() - 200, Gdx.graphics.getHeight() -50);

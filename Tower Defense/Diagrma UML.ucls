@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class-diagram version="1.1.7" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
   associations="true" dependencies="false" nesting-relationships="true">  
-  <class id="1" language="java" name="towers.YellowTower" project="Tower Defense" 
-    file="/Tower Defense/src/towers/YellowTower.java" binary="false" corner="BOTTOM_RIGHT">    
+  <class id="1" language="java" name="ar.edu.itba.TowerDefense.towers.YellowTower" project="Tower Defense" 
+    file="/Tower Defense/src/ar/edu/itba/TowerDefense/towers/YellowTower.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="1113" y="1028"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -10,8 +10,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="2" language="java" name="towers.Proyectile" project="Tower Defense" 
-    file="/Tower Defense/src/towers/Proyectile.java" binary="false" corner="BOTTOM_RIGHT">    
+  <class id="2" language="java" name="ar.edu.itba.TowerDefense.towers.Proyectile" project="Tower Defense" 
+    file="/Tower Defense/src/ar/edu/itba/TowerDefense/towers/Proyectile.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="61" y="659"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -19,8 +19,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="3" language="java" name="towers.PurpleTower" project="Tower Defense" 
-    file="/Tower Defense/src/towers/PurpleTower.java" binary="false" corner="BOTTOM_RIGHT">    
+  <class id="3" language="java" name="ar.edu.itba.TowerDefense.towers.PurpleTower" project="Tower Defense" 
+    file="/Tower Defense/src/ar/edu/itba/TowerDefense/towers/PurpleTower.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="974" y="-66"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -28,8 +28,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="4" language="java" name="towers.GreenTower" project="Tower Defense" 
-    file="/Tower Defense/src/towers/GreenTower.java" binary="false" corner="BOTTOM_RIGHT">    
+  <class id="4" language="java" name="ar.edu.itba.TowerDefense.towers.GreenTower" project="Tower Defense" 
+    file="/Tower Defense/src/ar/edu/itba/TowerDefense/towers/GreenTower.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="1544" y="1048"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -37,8 +37,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="5" language="java" name="towers.BlueTower" project="Tower Defense" 
-    file="/Tower Defense/src/towers/BlueTower.java" binary="false" corner="BOTTOM_RIGHT">    
+  <class id="5" language="java" name="ar.edu.itba.TowerDefense.towers.BlueTower" project="Tower Defense" 
+    file="/Tower Defense/src/ar/edu/itba/TowerDefense/towers/BlueTower.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="1716" y="483"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -46,8 +46,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="6" language="java" name="towers.Tower" project="Tower Defense" file="/Tower Defense/src/towers/Tower.java" 
-    binary="false" corner="BOTTOM_RIGHT">    
+  <class id="6" language="java" name="ar.edu.itba.TowerDefense.towers.Tower" project="Tower Defense" 
+    file="/Tower Defense/src/ar/edu/itba/TowerDefense/towers/Tower.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="1343" y="83"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -55,8 +55,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="7" language="java" name="ar.edu.itba.TowerDefense.GameEngine" project="Tower Defense" 
-    file="/Tower Defense/src/ar/edu/itba/TowerDefense/GameEngine.java" binary="false" corner="BOTTOM_RIGHT">    
+  <class id="7" language="java" name="ar.edu.itba.TowerDefense.back.GameEngine" project="Tower Defense" 
+    file="/Tower Defense/src/ar/edu/itba/TowerDefense/back/GameEngine.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="716" y="1128"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -64,8 +64,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <interface id="8" language="java" name="ar.edu.itba.TowerDefense.Logical" project="Tower Defense" 
-    file="/Tower Defense/src/ar/edu/itba/TowerDefense/Logical.java" binary="false" corner="BOTTOM_RIGHT">    
+  <interface id="8" language="java" name="ar.edu.itba.TowerDefense.back.Logical" project="Tower Defense" 
+    file="/Tower Defense/src/ar/edu/itba/TowerDefense/back/Logical.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="565" y="468"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -73,8 +73,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </interface>  
-  <class id="9" language="java" name="ar.edu.itba.TowerDefense.Money" project="Tower Defense" 
-    file="/Tower Defense/src/ar/edu/itba/TowerDefense/Money.java" binary="false" corner="BOTTOM_RIGHT">    
+  <class id="9" language="java" name="ar.edu.itba.TowerDefense.back.Money" project="Tower Defense" 
+    file="/Tower Defense/src/ar/edu/itba/TowerDefense/back/Money.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="134" y="200"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -82,8 +82,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="10" language="java" name="ar.edu.itba.TowerDefense.Connector" project="Tower Defense" 
-    file="/Tower Defense/src/ar/edu/itba/TowerDefense/Connector.java" binary="false" corner="BOTTOM_RIGHT">    
+  <class id="10" language="java" name="ar.edu.itba.TowerDefense.back.Connector" project="Tower Defense" 
+    file="/Tower Defense/src/ar/edu/itba/TowerDefense/back/Connector.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="1344" y="640"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -91,8 +91,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="11" language="java" name="units.Unit" project="Tower Defense" file="/Tower Defense/src/units/Unit.java" 
-    binary="false" corner="BOTTOM_RIGHT">    
+  <class id="11" language="java" name="ar.edu.itba.TowerDefense.units.Unit" project="Tower Defense" 
+    file="/Tower Defense/src/ar/edu/itba/TowerDefense/units/Unit.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="365" y="1073"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -100,8 +100,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="12" language="java" name="units.UnitsCreator" project="Tower Defense" 
-    file="/Tower Defense/src/units/UnitsCreator.java" binary="false" corner="BOTTOM_RIGHT">    
+  <class id="12" language="java" name="ar.edu.itba.TowerDefense.units.UnitsCreator" project="Tower Defense" 
+    file="/Tower Defense/src/ar/edu/itba/TowerDefense/units/UnitsCreator.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="526" y="-17"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -134,93 +134,85 @@
     <display labels="true" multiplicity="true"/>  
   </association>  
   <association id="21">    
-    <end type="SOURCE" refId="7" navigable="false">      
-      <attribute id="22" name="uni"/>      
-      <multiplicity id="23" minimum="0" maximum="2147483647"/>    
-    </end>    
-    <end type="TARGET" refId="11" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="24">    
     <end type="SOURCE" refId="5" navigable="false">      
-      <attribute id="25" name="p"/>      
-      <multiplicity id="26" minimum="0" maximum="2147483647"/>    
+      <attribute id="22" name="p"/>      
+      <multiplicity id="23" minimum="0" maximum="2147483647"/>    
     </end>    
     <end type="TARGET" refId="10" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="27">    
+  <association id="24">    
     <end type="SOURCE" refId="9" navigable="false">      
-      <attribute id="28" name="purse"/>      
-      <multiplicity id="29" minimum="0" maximum="1"/>    
+      <attribute id="25" name="purse"/>      
+      <multiplicity id="26" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="9" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <realization id="30">    
+  <realization id="27">    
     <end type="SOURCE" refId="2"/>    
     <end type="TARGET" refId="8"/>  
   </realization>  
-  <realization id="31">    
+  <realization id="28">    
     <end type="SOURCE" refId="3"/>    
     <end type="TARGET" refId="8"/>  
   </realization>  
-  <realization id="32">    
+  <realization id="29">    
     <end type="SOURCE" refId="1"/>    
     <end type="TARGET" refId="8"/>  
   </realization>  
-  <realization id="33">    
+  <realization id="30">    
     <end type="SOURCE" refId="11"/>    
     <end type="TARGET" refId="8"/>  
   </realization>  
-  <association id="34">    
+  <association id="31">    
     <end type="SOURCE" refId="1" navigable="false">      
-      <attribute id="35" name="p"/>      
-      <multiplicity id="36" minimum="0" maximum="2147483647"/>    
+      <attribute id="32" name="p"/>      
+      <multiplicity id="33" minimum="0" maximum="2147483647"/>    
     </end>    
     <end type="TARGET" refId="10" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <realization id="37">    
+  <realization id="34">    
     <end type="SOURCE" refId="4"/>    
     <end type="TARGET" refId="8"/>  
   </realization>  
-  <association id="38">    
+  <association id="35">    
     <end type="SOURCE" refId="12" navigable="false">      
-      <attribute id="39" name="u"/>      
-      <multiplicity id="40" minimum="0" maximum="1"/>    
+      <attribute id="36" name="u"/>      
+      <multiplicity id="37" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="12" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <generalization id="41">    
+  <generalization id="38">    
     <end type="SOURCE" refId="4"/>    
     <end type="TARGET" refId="6"/>  
   </generalization>  
-  <realization id="42">    
+  <realization id="39">    
     <end type="SOURCE" refId="5"/>    
     <end type="TARGET" refId="8"/>  
   </realization>  
-  <generalization id="43">    
+  <generalization id="40">    
     <end type="SOURCE" refId="5"/>    
     <end type="TARGET" refId="6"/>  
   </generalization>  
-  <realization id="44">    
+  <realization id="41">    
     <end type="SOURCE" refId="6"/>    
     <end type="TARGET" refId="8"/>  
   </realization>  
-  <association id="45">    
+  <association id="42">    
     <end type="SOURCE" refId="2" navigable="false">      
-      <attribute id="46" name="victim"/>      
-      <multiplicity id="47" minimum="0" maximum="1"/>    
+      <attribute id="43" name="victim"/>      
+      <multiplicity id="44" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="11" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="48">    
+  <association id="45">    
     <end type="SOURCE" refId="7" navigable="false">      
-      <attribute id="49" name="ge"/>      
-      <multiplicity id="50" minimum="0" maximum="1"/>    
+      <attribute id="46" name="ge"/>      
+      <multiplicity id="47" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="7" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
