@@ -31,10 +31,9 @@ public class GameEngine {
 	
 	private GameEngine(){
 		towers = new TowerArrayList();
-	//	setTowerPlaces();
 	}
 	/**
-	 * metodo que se ejecuta en loop y que se encarga de manejar toda la logica del nivel.
+	 * Looping method that manages all of the level's logic
 	 */
 	public void update(){
 		if(!defeat){
@@ -52,7 +51,6 @@ public class GameEngine {
 		}
 		if( waveNumber > maxWave){
 			victory = true;
-			//LevelManager.getInstance().gotoMenu();
 		}
 		
 		if(life == 0){
@@ -66,9 +64,9 @@ public class GameEngine {
 		return ge;
 	}
 	/**
-	 * setea los caminos que van a reccorer las tropas
-	 * @param camino 1
-	 * @param camino 2
+	 * Sets the paths the troops will travel
+	 * @param path 1
+	 * @param path 2
 	 */
 	public void setPaths(Vector3[] p1, Vector3[] p2){
 		if(paths == null){
@@ -79,15 +77,14 @@ public class GameEngine {
 		}
 	}
 	/**
-	 * setea las posiociones de las torres
-	 * @param posiciones de las torres
+	 * Sets the towers positions
+	 * @param tower positions
 	 */
 	public void setTowerPlaces(Vector3[] towers){
 		pos = towers;
 	}
 	/**
-	 * setea el vector que se encarga de avisar si hay una torre creada en
-	 * ese espacio o no.
+	 * Sets the vector value which will warn if a tower already exists on that position
 	 * @param x
 	 * @param y
 	 */
@@ -116,11 +113,11 @@ public class GameEngine {
 		return units;
 	}
 	/**
-	 * recibe el nombre de la torre y la posicion donde la va a crear y se encarga
-	 * de crearla y ponerla en la posicion.
-	 * @param posicion en x
-	 * @param posiocion en y
-	 * @param nombre de la torre
+	 * Receives the tower's name and position and is in charge of
+	 * creating and placing it
+	 * @param x position
+	 * @param y position
+	 * @param tower name
 	 */
 	public void addTower(int newX, int newY, String string) {
 		Class cl,c2;
@@ -169,7 +166,7 @@ public class GameEngine {
 		back.attack(uni);		
 	}
 	/**
-	 * resetea todos los datos.
+	 * Resets all data
 	 */
 	public void reset(){
 		uni.clear();
@@ -180,9 +177,6 @@ public class GameEngine {
 		life = 10;
 		victory = false;
 		defeat = false;
-	//	for(int i = 0; i<pos.length;i++){
-	//		pos[i].z = 0;
-	//	}
 	}
 	public boolean getDefeat(){
 		return defeat;

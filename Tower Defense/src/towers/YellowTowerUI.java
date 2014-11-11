@@ -50,7 +50,6 @@ public class YellowTowerUI implements TowerDrawable {
 	}
 	@Override
 	public void stopSound() {
-		// TODO Auto-generated method stub
 		
 	}
 }

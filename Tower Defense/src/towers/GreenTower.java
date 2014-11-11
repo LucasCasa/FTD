@@ -84,9 +84,7 @@ public class GreenTower extends Tower implements Logical{
 						unit.remove(p.get(i).getBack().getVictim());
 					}
 					p.remove(i);
-				}/*else if(!unit.contains(p.get(i).getBack().getVictim())){
-					p.remove(i);
-				} */
+				}
 			}
 		}
 	}
@@ -94,22 +92,16 @@ public void upgrade()	{
 	switch(super.level){
 	case 1:
 		cooldown /=2;
-		System.out.println("LVL2");
 		break;
 	case 2:
 		attackDamage +=5;
-		System.out.println("LVL3");
 		break;
 	case 3:
 		range +=50;
-		System.out.println("LVL4");
 		break;
 	case 4:
 		super.ultimate = true;
-		System.out.println("LVLMAX");
 		break;
-	default:
-		System.out.println("MAX LEVEL REACHED");
 	}
 	level++;
 }

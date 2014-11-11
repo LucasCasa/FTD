@@ -33,12 +33,10 @@ public class ParticleMovingEffect implements Effect {
 		
 		if(drawTime >= 0.1f){
 			drawTime = 0;
-		drawPosX+=width;
-		if(drawPosX == width * animcant){
-			drawPosX = 0;
-		}
-			//batch.draw(texture, victim.getCenterX() - width / 2 , victim.getCenterY() - height / 2 , width, height, drawPosX, 0,width,height);
-			
+			drawPosX+=width;
+			if(drawPosX == width * animcant){
+				drawPosX = 0;
+			}	
 		}
 		batch.draw(texture, victim.getCenterX() - width / 2 , victim.getCenterY() - height / 2, drawPosX, 0, width, height);
 		calculateDispose();
@@ -51,5 +49,4 @@ public class ParticleMovingEffect implements Effect {
 	public boolean getDispose() {
 		return dispose;
 	}
-
 }

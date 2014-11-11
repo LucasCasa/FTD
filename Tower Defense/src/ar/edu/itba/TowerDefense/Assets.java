@@ -7,9 +7,9 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 
-public class Assets { // todas las texturas
+public class Assets { // All textures
 	
-	/* Texturas del menu */
+	/* Menu textures */
 	public static Texture backMenu = new Texture("MenuBack.fw.png");
 	public static Texture logo = new Texture("LOGO.png");
 	public static Texture playBTN = new Texture("jugarBTN.fw.png");
@@ -24,10 +24,10 @@ public class Assets { // todas las texturas
 	public static Texture lvl5BackThumb = new Texture("lvl5backThumb.jpg");
 	public static Texture lvl6BackThumb = new Texture("lvl6backThumb.jpg");
 	
-	/*Fondos*/
+	/*Backgrounds*/
 	public static Texture[] backlvl = {new Texture("backlvl1.png"),new Texture("backlvl2.png"),new Texture("backlvl3.jpg"),new Texture("backlvl4.jpg"),new Texture("backlvl5.jpg"),new Texture("backlvl6.jpg")};
 	
-	/* Texturas de las torres*/
+	/* Tower textures*/
 	public static Texture magicP = new Texture("magic.fw.png");
 	public static Texture magicY = new Texture("YTower.fw.png");
 	public static Texture archerT = new Texture("GTower.png");
@@ -49,7 +49,7 @@ public class Assets { // todas las texturas
 	public static Texture yellowEffect = new Texture("yellowEffect.fw.png");
 	public static Texture crit = new Texture("crit.fw.png"); 
 	
-	/* Texturas de seleccion de torres */
+	/* Tower selection textures */
 	public static Texture tSelect = new Texture("towerselect2.fw.png"); 
 	public static Texture newMagicP = new Texture("newmagicP.fw.png");
 	public static Texture newArcher = new Texture("newarcher2.fw.png");
@@ -60,7 +60,7 @@ public class Assets { // todas las texturas
 	public static Texture newMagicYNot = new Texture("newmagicYNot.fw.png");
 	public static Texture newMagicBNot = new Texture("newmagicBNot2.fw.png");
 	
-	/* Texturas de las enemigos */
+	/* Unit textures */
 	public static Texture health = new Texture("health.fw.png");
 	public static Texture healthb = new Texture("healthb.fw.png");
 	public static Texture yetti = new Texture("Yetti.fw.png");
@@ -79,7 +79,7 @@ public class Assets { // todas las texturas
 	public static Texture tree = new Texture("Arbol.fw.png");
 	public static Texture demonDeath = new Texture("demonsDeath3.fw.png");
 	
-	/* Texutras de informacion */
+	/* Information textures */
 	public static Texture infoBack = new Texture("UnitInfoBack.fw.png");
 	public static Texture infoBackFull = new Texture("infoBack.fw.png");
 	public static Texture life = new Texture("life.png");
@@ -95,7 +95,7 @@ public class Assets { // todas las texturas
 	public static Texture magicIcon = new Texture("magicIcon.png");
 	public static Texture noMagicIcon = new Texture("noMagicIcon.png");
 	
-	/* Sonidos */
+	/* Sounds */
 	public static Sound[] arrowRelease = {Gdx.audio.newSound(Gdx.files.internal("Sounds/ArrowRelease.mp3")),
 		  Gdx.audio.newSound(Gdx.files.internal("Sounds/ArrowRelease2.mp3"))};
 	public static Sound raySound = Gdx.audio.newSound(Gdx.files.internal("Sounds/raySound.mp3"));
@@ -104,7 +104,7 @@ public class Assets { // todas las texturas
 	public static Sound newYellow = Gdx.audio.newSound(Gdx.files.internal("Sounds/NewYellow.mp3"));
 	public static Sound newBlue = Gdx.audio.newSound(Gdx.files.internal("Sounds/NewBlue.mp3"));
 	
-	/* Constantes utiles */
+	/* Useful constants */
 	public static int MAGICW = 118;
 	public static int MAGICH = 106;
 	public static final int NEWTOWER_X = 51; 
@@ -114,7 +114,7 @@ public class Assets { // todas las texturas
 	public static final int SELL_X = sell.getWidth();
 	public static final int SELL_Y = sell.getHeight();
 	
-	/* Referencias de las tropas*/
+	/* Unit references */
 	public static final int TREE_REFERENCE = 0;	
 	public static final int YETTI_REFERENCE = 1; 
 	public static final int DEMON_REFERENCE = 2; 
@@ -130,7 +130,7 @@ public class Assets { // todas las texturas
 	public static final int OGRE_REFERENCE = 12; 
 	public static final int ZOMBIE_REFERENCE = 13;
 	
-	/* Fuentes */
+	/* Fonts */
 	public static final BitmapFont FONT = new BitmapFont(Gdx.files.internal("font.fnt"));
 	public static final BitmapFont SMALL_FONT = new BitmapFont(Gdx.files.internal("smallfont.fnt"));
 }

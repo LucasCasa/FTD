@@ -15,9 +15,10 @@ public class Money {
 		}
 	}
 	/**
-	 * sustrae una cantidad de plata y avisa si pudo o no.
+	 * Subtracts a given amount of money
+	 * and returns if the operation was achievable
 	 * @param amount
-	 * @return si se pudo sustraer la plata
+	 * @return subtract successful
 	 */
 	public boolean subtract(int amount){
 		if(this.amount >= amount ){
@@ -30,7 +31,7 @@ public class Money {
 	/**
 	 * 
 	 * @param amount
-	 * @return si la cantidad de plata es mayor que lo que se quiere sacar
+	 * @return if the current money is greater than what is to be subtracted
 	 */
 	public boolean canSubstract(int amount){
 		if(this.amount >= amount){

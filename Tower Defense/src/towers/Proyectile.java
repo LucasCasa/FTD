@@ -131,10 +131,8 @@ public class Proyectile implements Logical{
 			
 				
 			} else {
-			
 				return option2;
-						}
-//			return 0;
+			}
 		}
 		
 		public boolean getHit(){

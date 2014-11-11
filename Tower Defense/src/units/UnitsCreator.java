@@ -25,15 +25,17 @@ public class UnitsCreator {
 	
 	private static final UnitsCreator u = new UnitsCreator();
 	private Random rand = new Random();
-	private final int totalUnitTypes = 15; // Cambiar cuando se agreguen nuevas tropas
+	private final int totalUnitTypes = 15; // The amount of different unit types
 	
 	private UnitsCreator(){
 	}
 	/**
-	 * Carga el archivo XML con las waves
-	 * @param Nivel Actual
-	 * @param Oleada Actual
-	 * @param Recorridos de los enemigos
+	 * Loads an XML file with the amount of waves,
+	 * the types of troop and its respective amounts
+	 * and the distance between unit spawns
+	 * @param Current level
+	 * @param Current wave
+	 * @param Units paths
 	 */
 	public void loadWave(int level, int waveNumber, Vector3[][] paths){
 		DocumentBuilderFactory builderFactory =
@@ -66,7 +68,7 @@ public class UnitsCreator {
 			
 	}
 	/**
-	 * Lee el XML y carga los enemigos
+	 * Reads the XML file and loads the units
 	 * @param level
 	 * @param waveNumber
 	 * @param xPath
@@ -81,7 +83,7 @@ public class UnitsCreator {
 			GameEngine.getInstance().maxWave = Integer.parseInt(xPath.compile("//Level"+ level + "/@waves").evaluate(xmlDocument));
 		}
 		boolean check;
-		for(int j = 0; j<totalUnitTypes;j++){ // Ir aumentando totalUnitTypes mientras agreguemos mas tropas
+		for(int j = 0; j<totalUnitTypes;j++){
 			String expression = "//Level"+ level +"/Wave" + waveNumber + "//@id="+j;
 			check = Boolean.parseBoolean(xPath.compile(expression).evaluate(xmlDocument));
 			if(check){
@@ -105,7 +107,6 @@ public class UnitsCreator {
 					u.setnodes(4, paths[aux]);
 					GameEngine.getInstance().getUnits().add(u);
 					UnitUI uUI = createUnitUI(unitReference,posx, 350, GameEngine.getInstance().getUnits().get(i)); 
-				//	InterfaceManager.getInstance().getUnitsUI().add(uUI);
 					GameEngine.getInstance().getUnitArray().add(u,uUI);
 					posx-=jump;
 				}
@@ -115,12 +116,11 @@ public class UnitsCreator {
 		}
 	}
 	/**
-	 * llama a las funciones que se encargan de crear a los enemigos
-	 * en base al ID que reciben
+	 * Calls the methods that will create the units based on the ID received
 	 * @param unitReference
 	 * @param posx
 	 * @param posy
-	 * @return
+	 * @return Unit
 	 */
 	public Unit createUnit(int unitReference, int posx, int posy){
 		switch(unitReference){
@@ -158,13 +158,12 @@ public class UnitsCreator {
 		
 	}
 	/**
-	 * llama a las funciones que se encargan de crear la UI de las unidades
-	 * en base al ID.
+	 * Calls the methods that will create the units UI based on the ID received
 	 * @param unitReference
 	 * @param posx
 	 * @param posy
-	 * @param u
-	 * @return
+	 * @param Unit
+	 * @return UnitUI
 	 */
 	public UnitUI createUnitUI(int unitReference, int posx, int posy, Unit u){
 		switch(unitReference){
@@ -274,7 +273,7 @@ public class UnitsCreator {
 		return ui;
 	}
 	public Unit createBlueSpider(int posx, int posy){
-		return new Unit(posx, posy, 54,39,150,50,0.8f,20,Assets.BLUE_SPIDER_REFERENCE,"Araï¿½a Azul");
+		return new Unit(posx, posy, 54,39,150,50,0.8f,20,Assets.BLUE_SPIDER_REFERENCE,"Araña Azul");
 	}
 	public UnitUI createBlueSpiderUI(int posx, int posy, Unit u){
 		float[] width = {50,54,54,50,65};
@@ -285,7 +284,7 @@ public class UnitsCreator {
 		return new UnitUI(u,Assets.blueSpider,Assets.blueSpider,posx,posy,width,heigth,drawPosX, drawPosY,animcant,0.05f,150);
 	}
 	public Unit createGreenSpider(int posx, int posy){
-		return new Unit(posx, posy, 44,33,100,60,1,20,Assets.GREEN_SPIDER_REFERENCE,"Araï¿½a Verde");
+		return new Unit(posx, posy, 44,33,100,60,1,20,Assets.GREEN_SPIDER_REFERENCE,"Araña Verde");
 	}
 	public UnitUI createGreenSpiderUI(int posx, int posy, Unit u){
 		float[] width = {43,46,46,44,56};
@@ -343,7 +342,7 @@ public class UnitsCreator {
 		return new UnitUI(u,Assets.redGargoyle,Assets.demonDeath,posx,posy,width,heigth,drawPosX,drawPosY,animcant,0.05f,60);
 	}
 	public Unit createTree(int posx, int posy){
-		return new Unit(posx, posy, 36,47,1000,20,0.2f,200,Assets.TREE_REFERENCE,"ï¿½rbol");
+		return new Unit(posx, posy, 36,47,1000,20,0.2f,200,Assets.TREE_REFERENCE,"Arbol");
 	}
 	public UnitUI createTreeUI(int posx, int posy, Unit u){
 		float[] width = {35,36,36,35,34};
@@ -365,7 +364,7 @@ public class UnitsCreator {
 		return new UnitUI(u,Assets.gladiator,Assets.gladiator,posx,posy,width,heigth,drawPosX,drawPosY,animcant,0.1f,120);
 	}
 	public Unit createArmoredDemon(int posx, int posy){
-		return new Unit(posx, posy, 30,39,150,35,0.4f,40,Assets.ARMORED_DEMON_REFERENCE,"DemonioA");
+		return new Unit(posx, posy, 30,39,150,35,0.4f,40,Assets.ARMORED_DEMON_REFERENCE,"Demonio con Armadura");
 	}
 	public UnitUI createArmoredDemonUI(int posx, int posy, Unit u){
 		float[] width = {30,30,30,30,40};

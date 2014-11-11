@@ -21,9 +21,9 @@ public class TouchManager {
 
 	}
 	/**
-	 * maneja la accion del click del mouse.
-	 * @param posicion x del click
-	 * @param posicion y del click
+	 * Manages the clicking action
+	 * @param posicion click's x position
+	 * @param posicion click's y position
 	 */
 	public void onClick(int x, int y){
 		InterfaceManager.getInstance().infoUnit.setTower(null);
@@ -54,9 +54,9 @@ public class TouchManager {
 		}
 	}
 	/**
-	 * detecta si se clickeo alguna unidad, en caso afirmativo
-	 * setea la clase encargada de mostrar la informacion
-	 * de dicha unidad
+	 * Detects if a unit was clicked,
+	 * if its true it shows the information asociated
+	 * to that unit
 	 * @param x
 	 * @param y
 	 */
@@ -70,12 +70,12 @@ public class TouchManager {
 		}
 	}
 	/**
-	 * detecta si se clikeo un lugar donde hay o puede haber una torre.
-	 * si pasa eso entonces se encarga de determinar si dar la opcion de
-	 * crear una nueva torre o subir de nivel una existente
+	 * Detects if a location where there is or may be a tower is clicked.
+	 * If it is, the method determines whether the option to create a new tower
+	 * or upgrade an existing one is given
 	 * @param x
 	 * @param y
-	 * @return
+	 * @return boolean indicating if it is the possible location of a tower
 	 */
 	private boolean calculateTowerSlot(int x, int y) {
 		int gridX = (x / Main.GRIDSIZE) * Main.GRIDSIZE;
@@ -86,7 +86,6 @@ public class TouchManager {
 		for(int i = 0;i < pos.length && flag; i++){
 			if(gridX == pos[i].x && gridY == pos[i]. y){
 				Connector<Tower,TowerDrawable> to = GameEngine.getInstance().getTowerByPosition(gridX,gridY);
-				System.out.println(to);
 				CircleManager.getInstance().setCenter(gridX + Main.GRIDSIZE / 2,gridY + Main.GRIDSIZE / 2);
 				if(to == null){
 					InterfaceManager.getInstance().towerSlotClicked(true,false);
@@ -100,7 +99,7 @@ public class TouchManager {
 		return flag;
 	}
 	/**
-	 * maneja el click para poder subir de nivel o vender una torre.
+	 * Manages the click for upgrading or selling a tower.
 	 * @param x
 	 * @param y
 	 */
@@ -125,7 +124,7 @@ public class TouchManager {
 					pos[j].z = 0;
 				}
 			}
-			Money.getInstance().add((int)(t.value()*0.8f)); // vemos como lo hacemos
+			Money.getInstance().add((int)(t.value()*0.8f));
 				
 			
 		}
@@ -135,7 +134,7 @@ public class TouchManager {
 		
 	}
 	/**
-	 * maneja el click para poder crear una nueva torre
+	 * Manages the click for creating a new tower
 	 * @param x
 	 * @param y
 	 */
@@ -174,8 +173,7 @@ public class TouchManager {
 		InterfaceManager.getInstance().nothingClicked();
 	}
 	/**
-	 * se encarga de mostrar( en caso de que sea necesario)
-	 * informacion sobre la torre que el usuario desea saber.
+	 * Shows (in case its necessary) information about the tower
 	 * @param x
 	 * @param y
 	 */

@@ -62,8 +62,6 @@ public class GreenTowerUI implements TowerDrawable {
 		archer.get(draw[0]).setScale((float) Main.GRIDSIZE / Assets.archerT.getWidth());
 		archer.get(draw[1]).setScale((float) Main.GRIDSIZE / Assets.archerT.getWidth());
 		
-		//batch.draw(Assets.area,tower.getAttackPos().x - tower.getRange(),tower.getAttackPos().y - tower.getRange(), tower.getRange() * 2 ,tower.getRange() * 2);
-
 		batch.draw(Assets.archerT, posX, posY,Main.GRIDSIZE, Main.GRIDSIZE * ((float) Assets.archerT.getHeight() / Assets.archerT.getWidth()));
 		
 			
@@ -111,7 +109,6 @@ public class GreenTowerUI implements TowerDrawable {
 	}
 	@Override
 	public void stopSound() {
-		// TODO Auto-generated method stub
 		
 	}
 }

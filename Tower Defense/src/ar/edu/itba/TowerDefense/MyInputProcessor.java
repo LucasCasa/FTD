@@ -33,7 +33,7 @@ public class MyInputProcessor implements InputProcessor {
 	    	 if(LevelManager.getInstance().getLevel() == 0){
 	    		 MenuTouchManager.getInstance().onClick(x,y);
 	    	 }else{
-	    		 TouchManager.getInstance().onClick(x, y); // permite dibujar la toore que sigue al mouse cuando mantenes apretado
+	    		 TouchManager.getInstance().onClick(x, y);
 	    	 }
 	      }else if(button == Buttons.RIGHT){
 	    	  TouchManager.getInstance().onRightClick(x,y);

@@ -44,9 +44,8 @@ public class InterfaceManager {
 		
 
 		/*
-		 * Metodo en Loop, se encarga de toda la logica del dibujo 
-		 * del juego y llama a los demas metodos y clases para que 
-		 * dibujen.
+		 * Looping method, is in charge of all the drawing logic
+		 * and calls upon the methods that do the actual drawing
 		 */
 		public void draw(){
 			batch.draw(background, 0, 0,Gdx.graphics.getWidth(),Gdx.graphics.getHeight());
@@ -96,7 +95,7 @@ public class InterfaceManager {
 			}
 		}
 		/*
-		 * Maneja el dibujo de la informacion de las torres
+		 * Manages the drawing the towers information
 		 */
 		private void manageTowerInfo() {
 			for(int i=0;i<drawInfo.length;i++){
@@ -107,7 +106,7 @@ public class InterfaceManager {
 			
 		}
 		/*
-		 * Maneja los efectos del juego.
+		 * Manages the game's effects
 		 */
 		private void manageEffects() {
 			for(int i = 0; i<e.size();i++){
@@ -120,11 +119,10 @@ public class InterfaceManager {
 			
 		}
 		/* 
-		 * se fija en la vida de los enemigos.
-		 * si la vida es igual o menos a cero
-		 * crea un efecto con la animacion de la muerte 
-		 * del enemigo y los elimina del array.
-		 *
+		 * Checks the unit's health.
+		 * If it is equal or less than zero
+		 * it will create effect with the death animation
+		 * and eliminate the unit from the array
 		 */
 		private void checkUnitshealth() {
 			for (int i = 0;i<units.size();i++){
@@ -139,23 +137,21 @@ public class InterfaceManager {
 			
 		}
 	/*
-	 * dibuja las opciones para subir de nivel, o 
-	 * vender una torre
+	 * Draws the options for upgrading or selling a tower
 	 */
 	private void drawUpgradeCircle() {
 		CircleManager.getInstance().drawCircleUpgrade();
 	}
 	/*
-	 * Dibuja las opciones de crear una nueva
-	 * torre
+	 * Draws the options for creating a new tower
 	 */
 	private void drawNewTowerCircle() {
 		CircleManager.getInstance().drawNewCircle();
 	
 	}
-	/* Se llama cuando se muere una tropa
-	 * carga la animacion de la muerte de
-	 * esa tropa
+	/*
+	 * Called upon when a unit dies,
+	 * it loads its death animation
 	 */
 	public void loadDeathEffect(Connector<Unit,UnitUI> u){
 		Texture text = u.getFront().getDeathTexture();
@@ -205,18 +201,18 @@ public class InterfaceManager {
 	}
 	
 	/*
-	 * Se llama si no se clickeo en un espacio de una torre
+	 * Called upon if the click is not on the location of a tower
 	 */
 	public void nothingClicked() {
 		drawNew = false;
 		drawUpgrade = false;
 	}
 	/*
-	 * el primer parametro es true si todavia no hay una torre en el 
-	 * espacio seleccionado, y el segundo es true si ya hay una torre
-	 * en el espacio.
-	 * Notese que las 2 no pueden ser true a la vez.
-	 * drawCircle es true si alguna de las 2 es true
+	 * First parameter is true if the selected location has no tower yet.
+	 * Second parameter is true if there already is a tower in that location.
+	 * 
+	 * Note: Both can't be true at the same time,
+	 * 		 drawCircle is true if any of the two parameters are true.
 	 */
 	public void towerSlotClicked(boolean newTower, boolean alreadyTower) {
 		if(!(newTower && alreadyTower)){
@@ -239,7 +235,7 @@ public class InterfaceManager {
 		return towers;
 	}
 	/**
-	 * reseta todas las variables para poder empezar un nuevo nivel
+	 * Resets all variables for the next level
 	 */
 	public void reset() {
 		towers.clear();
@@ -248,7 +244,7 @@ public class InterfaceManager {
 		e.clear();
 	}
 	/**
-	 * carga todos los datos desde el GameEngine.
+	 * Loads all data through GameEngine
 	 */
 	public void loadFromGE(){
 		towers = GameEngine.getInstance().towers;

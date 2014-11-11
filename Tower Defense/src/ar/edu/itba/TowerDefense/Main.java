@@ -33,7 +33,7 @@ public class Main extends ApplicationAdapter {
 		font = new BitmapFont(Gdx.files.internal("font.fnt"));
 		font.setScale(0.5f);
 		MyInputProcessor MYP = new MyInputProcessor();
-		Gdx.input.setInputProcessor(MYP); // el que se encarga del manejo del input
+		Gdx.input.setInputProcessor(MYP); // The input manager
 		d = Assets.verde.createSprites();
 		
 
@@ -46,10 +46,10 @@ public class Main extends ApplicationAdapter {
 		
 		
 		cam.update();
-		Gdx.gl.glClearColor(0, 0, 0, 1); // creo que esto y lo de abajo es medio al pedo, pero vino asi
+		Gdx.gl.glClearColor(0, 0, 0, 1);
 		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 		
-		batch.begin(); // todos los draw tienen que ir entre batch.begin y batch.end
+		batch.begin(); // All draws mus be between batch.begin and batch.end
 		LevelManager.getInstance().update();
 		CharSequence str = "FPS: " + Gdx.graphics.getFramesPerSecond();
 		font.draw(batch, str, Gdx.graphics.getWidth() - 200, Gdx.graphics.getHeight() -50);

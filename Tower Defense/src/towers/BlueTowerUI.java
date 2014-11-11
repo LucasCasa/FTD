@@ -63,7 +63,6 @@ public class BlueTowerUI implements TowerDrawable{
 
 	@Override
 	public void stopSound() {
-		// TODO Auto-generated method stub
 		
 	}
 

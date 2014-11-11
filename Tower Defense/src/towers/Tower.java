@@ -43,9 +43,9 @@ public abstract class Tower implements Logical {
 	}
 	/**
 	 * 
-	 * @param posicion del enemigo en x
-	 * @param posicion del enemigo en y
-	 * @return si esta en rango o no
+	 * @param Units x position
+	 * @param Units y position
+	 * @return If unit is in range or not
 	 */
 	protected boolean isInRange(int x, int y){
 		double aux;
@@ -57,14 +57,12 @@ public abstract class Tower implements Logical {
 		}
 	}
 	
-	@Override
 	public int hashCode() {
 		int result = 1;
 		result = (int) (pos.x/ Main.GRIDSIZE * 100 + pos.y / Main.GRIDSIZE);
 		return result;
 	}
 	
-	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
 			return true;

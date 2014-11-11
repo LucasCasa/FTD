@@ -31,7 +31,7 @@ public class YellowTower extends Tower implements Logical{
 		
 	}
 	/**
-	 * Maneja el ataque de la torre
+	 * Manages the tower's attack
 	 */
 	public void attack(ArrayList<Unit> unit){
 		int unitsHit = 0;
@@ -73,7 +73,6 @@ public class YellowTower extends Tower implements Logical{
 					unit.remove(p.get(i).getBack().getVictim());
 				}else if(ultimate){
 					p.get(i).getBack().getVictim().setYellowMark(true);
-					//p.get(i).getBack().getVictim().slowDown(0.5f,1);
 				}
 				p.remove(i);
 			}else if(!unit.contains(p.get(i).getBack().getVictim())){
@@ -101,22 +100,16 @@ public class YellowTower extends Tower implements Logical{
 		switch(super.level){
 		case 1:
 			attackDamage+= 10;
-			System.out.println("LVL2");
 			break;
 		case 2:
 			maxHits = 15;
-			System.out.println("LVL3");
 			break;
 		case 3:
 			range +=40;
-			System.out.println("LVL4");
 			break;
 		case 4:
 			super.ultimate = true;
-			System.out.println("LVLMAX");
 			break;
-		default:
-			System.out.println("MAX LEVEL REACHED");
 		}
 		level++;
 	}

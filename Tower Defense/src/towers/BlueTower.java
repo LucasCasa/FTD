@@ -109,22 +109,16 @@ public class BlueTower extends Tower implements Logical{
 		switch(super.level){
 		case 1:
 			range +=50;
-			System.out.println("LVL2");
 			break;
 		case 2:
 			freezeDuration = 0.7f ;
-			System.out.println("LVL3");
 			break;
 		case 3:
 			freezeDuration = 1f;
-			System.out.println("LVL4");
 			break;
 		case 4:
 			super.ultimate = true;
-			System.out.println("LVLMAX");
 			break;
-		default:
-			System.out.println("MAX LEVEL REACHED");
 		}
 		level++;
 	}

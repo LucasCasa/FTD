@@ -143,34 +143,26 @@ public class PurpleTower extends Tower implements Logical{
 		switch(super.level){
 		case 1:
 			chargingTime = 0.5f;
-			System.out.println("LVL2");
 			break;
 		case 2:
 			attackDamage +=50;
-			System.out.println("LVL3");
 			break;
 		case 3:
 			range +=50;
-			System.out.println("LVL4");
 			break;
 		case 4:
 			super.ultimate = true;
 			attackDamage = 100;
-			System.out.println("LVLMAX");
 			break;
-		default:
-			System.out.println("MAX LEVEL REACHED");
 		}
 		level++;
 		
 	}
-	@Override
 	public int hashCode() {
 		int result = 1;
 		result = (int) (pos.x/ Main.GRIDSIZE * 100 + pos.y / Main.GRIDSIZE);
 		return result;
 	}
-	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
 			return true;

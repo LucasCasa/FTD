@@ -66,24 +66,24 @@ public class Unit implements Logical , Comparable<Unit>{
 			newDirection = true;
 		}
 		switch( (int) path[actpos].z){
-		case 0: //abajo
+		case 0: // Downwards
 			pos.x += 0;
 			pos.y -= speed * Gdx.graphics.getDeltaTime();
 			mov.set(0, -speed);
 		break;
 		
-		case 1: // izq
+		case 1: // Left
 			pos.x -= speed * Gdx.graphics.getDeltaTime();
 			pos.y += 0;
 			mov.set(-speed, 0);
 		break;
 		
-		case 2: //der
+		case 2: // Right
 			pos.x += speed * Gdx.graphics.getDeltaTime();
 			pos.y += 0;
 			mov.set(speed,0);
 		break;
-		case 3: //arriba
+		case 3: // Upwards
 			pos.x += 0;
 			pos.y += speed * Gdx.graphics.getDeltaTime();
 			mov.set(0,speed);
