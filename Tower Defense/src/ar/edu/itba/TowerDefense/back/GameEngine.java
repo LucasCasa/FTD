@@ -134,10 +134,8 @@ public class GameEngine {
 		
 			towers.add(t,tUI);
 		} catch (ClassNotFoundException e) {
-			System.out.println("La cagaste chabon Class");
 			e.printStackTrace();
 		} catch (NoSuchMethodException e) {
-			System.out.println("La cagaste chabon Method");
 			e.printStackTrace();
 		} catch (SecurityException e) {
 			e.printStackTrace();
