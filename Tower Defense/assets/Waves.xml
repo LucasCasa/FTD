@@ -121,24 +121,6 @@
 			<Ogre id='12' jump='35'>0</Ogre>
 			<Zombie id='13' jump='20'>10</Zombie>
 		</Wave5>
-		<Wave6>
-			<Tree id='0' jump='40' >3</Tree>
-			<BlueSpider id='4' jump='50'>10</BlueSpider>
-			<GreenSpider id='5' jump='50'>5</GreenSpider>
-			<Assassin id='9' jump='20'>0</Assassin>
-			<Basic id='10' jump='25'>20</Basic>
-			<Ogre id='12' jump='35'>10</Ogre>
-			<Zombie id='13' jump='20'>10</Zombie>
-		</Wave6>
-		<Wave7>
-			<Tree id='0' jump='40' >5</Tree>
-			<BlueSpider id='4' jump='50'>20</BlueSpider>
-			<GreenSpider id='5' jump='50'>10</GreenSpider>
-			<Assassin id='9' jump='20'>20</Assassin>
-			<Basic id='10' jump='25'>10</Basic>
-			<Ogre id='12' jump='35'>20</Ogre>
-			<Zombie id='13' jump='20'>10</Zombie>
-		</Wave7>
 	</Level2>
 	
 	<Level3 waves="5">
@@ -172,52 +154,68 @@
 	
 	<Level4 waves="5">
 		<Wave1>
-			<Assassin id='9' jump='40'>20</Assassin>	
-			<Demon id='2' jump='30'>10</Demon>	
-			<RedGargoyle id='7' jump='40'>5</RedGargoyle>
-			<BasicDemon id='11' jump='25'>5</BasicDemon>
+			<Assassin id='9' jump='40'>15</Assassin>	
+			<Yetti id='1' jump='40'>2</Yetti>
 		</Wave1>
 		<Wave2>
-			<BlackGargoyle id='6' jump='40'>15</BlackGargoyle>
+			<BlackGargoyle id='6' jump='40'>5</BlackGargoyle>
+			<Yetti id='1' jump='40'>2</Yetti>
+			<Assassin id='9' jump='40'>20</Assassin>	
 		</Wave2>
 		<Wave3>
+			<Basic id='10' jump='25'>10</Basic>
+			<Ogre id='12' jump='35'>20</Ogre>
+			<Zombie id='13' jump='20'>10</Zombie>
 			<Tree id='0' jump='40'>2</Tree>
-			<Demon id='2' jump='30'>25</Demon>
+			<Yetti id='1' jump='40'>5</Yetti>
 		</Wave3>
 		<Wave4>
-			<Demon id='2' jump='30'>10</Demon>
-			<RedGargoyle id='7' jump='40'>10</RedGargoyle>
+			<BlueSpider id='4' jump='50'>20</BlueSpider>
+			<Yetti id='1' jump='40'>20</Yetti>
 		</Wave4>
 		<Wave5>
-			<Tree id='0' jump='40'>1</Tree>
-			<Yetti id='1' jump='40'>2</Yetti>
-			<BlueSpider id='4' jump='50'>2</BlueSpider>
-			<BlackGargoyle id='6' jump='40'>15</BlackGargoyle>
+			<Tree id='0' jump='40'>2</Tree>
+			<BlueSpider id='4' jump='50'>20</BlueSpider>
+			<BlackGargoyle id='6' jump='40'>10</BlackGargoyle>
+			<Yetti id='1' jump='40'>5</Yetti>
 		</Wave5>
 	</Level4>
 	
 	<Level5 waves="5">
 		<Wave1>
+			<Demon id='2' jump='30'>15</Demon>
+			<BlackGargoyle id='6' jump='40'>0</BlackGargoyle>
+			<RedGargoyle id='7' jump='40'>0</RedGargoyle>
+			<BasicDemon id='11' jump='25'>15</BasicDemon>
 			<ArmoredDemon id='3' jump='35'>4</ArmoredDemon>
-			<Gladiator id='8' jump='35'>1</Gladiator>
-			<BlackGargoyle id='6' jump='40'>15</BlackGargoyle>
 		</Wave1>
 		<Wave2>
-			<BlackGargoyle id='6' jump='40'>15</BlackGargoyle>
+			<Demon id='2' jump='30'>10</Demon>
+			<BlackGargoyle id='6' jump='40'>3</BlackGargoyle>
+			<RedGargoyle id='7' jump='40'>1</RedGargoyle>
+			<BasicDemon id='11' jump='25'>5</BasicDemon>
+			<ArmoredDemon id='3' jump='35'>10</ArmoredDemon>
 		</Wave2>
 		<Wave3>
-			<Tree id='0' jump='40'>2</Tree>
-			<Demon id='2' jump='30'>25</Demon>
+			<Demon id='2' jump='30'>0</Demon>
+			<BlackGargoyle id='6' jump='40'>10</BlackGargoyle>
+			<RedGargoyle id='7' jump='40'>5</RedGargoyle>
+			<BasicDemon id='11' jump='25'>0</BasicDemon>
+			<ArmoredDemon id='3' jump='35'>0</ArmoredDemon>
 		</Wave3>
 		<Wave4>
-			<Demon id='2' jump='30'>10</Demon>
-			<RedGargoyle id='7' jump='40'>10</RedGargoyle>
+			<Demon id='2' jump='30'>15</Demon>
+			<BlackGargoyle id='6' jump='40'>3</BlackGargoyle>
+			<RedGargoyle id='7' jump='40'>5</RedGargoyle>
+			<BasicDemon id='11' jump='25'>5</BasicDemon>
+			<ArmoredDemon id='3' jump='35'>30</ArmoredDemon>
 		</Wave4>
 		<Wave5>
-			<Tree id='0' jump='40'>1</Tree>
-			<Yetti id='1' jump='40'>2</Yetti>
-			<BlueSpider id='4' jump='50'>2</BlueSpider>
-			<BlackGargoyle id='6' jump='40'>15</BlackGargoyle>
+			<Demon id='2' jump='30'>15</Demon>
+			<BlackGargoyle id='6' jump='40'>10</BlackGargoyle>
+			<RedGargoyle id='7' jump='40'>10</RedGargoyle>
+			<BasicDemon id='11' jump='25'>0</BasicDemon>
+			<ArmoredDemon id='3' jump='35'>30</ArmoredDemon>
 		</Wave5>
 	</Level5>
 	
