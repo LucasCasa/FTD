@@ -31,7 +31,9 @@ public abstract class CustomArrayList<T extends Logical,S extends Drawable> {
 	}
 	public void remove(T obj){
 		int i = back.indexOf(obj);
-		remove(i);
+		if(i>=0){
+			remove(i);
+		}
 	}
 	public boolean contains(T obj){
 		return back.contains(obj);
@@ -43,7 +45,6 @@ public abstract class CustomArrayList<T extends Logical,S extends Drawable> {
 		if(back.size() == front.size()){
 			return back.size();
 		}else{
-			System.out.println("ERORR EN EL BALANCE");
 			return 0;
 		}
 	}

@@ -116,9 +116,8 @@ public class TouchManager {
 		
 		if(t.isUpgradeable()){	
 			if( CircleManager.getInstance().upgradeClicked(x, y)){
-				t.upgrade();
-				System.out.println("PUEDO UPGREADEAR");
 				Money.getInstance().subtract(t.value() * t.level);
+				t.upgrade();
 			}
 		}
 		if(CircleManager.getInstance().sellClicked(x, y)){

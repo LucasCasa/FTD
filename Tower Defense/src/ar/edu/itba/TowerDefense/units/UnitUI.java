@@ -36,7 +36,7 @@ public class UnitUI implements Drawable,Comparable<UnitUI>{
 	
 	Unit unit;
 	private boolean flipped;
-	private boolean alreadyMarked;
+	private boolean alreadyMarked = false;
 	
 	public UnitUI( Unit unit,Texture texture,Texture deathTexture, float posx, float posy, float[] width, float[] height, int drawPosX[], int[] drawPosY ,float[] animcant, float animvel, float totalHealth){
 		this.batch = InterfaceManager.getInstance().batch;

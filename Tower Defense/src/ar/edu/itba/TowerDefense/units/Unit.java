@@ -180,9 +180,11 @@ public class Unit implements Logical , Comparable<Unit>{
 	public void setYellowMark(boolean state){
 		if(state){
 			actualArmor += 0.5f;
+			yellowMark = true;
 		}else{
 			actualArmor = armor;
 		}
+		
 	}
 	public float getArmor(){
 		return armor;
