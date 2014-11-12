@@ -7,7 +7,7 @@ Alumnos:
 
 ===
 <h3>Acerca de:</h3>
-Este juego es del genero de los Tower Defense, en dichos juegos el objetivo es prevenir que los enemigo que van apareciendo lleguen al final del recorrido. para lograr eso se posibilita la creacion de torres que atacan a los enemigos.
+Este juego es del genero de los Tower Defense, donde el objetivo es prevenir que los enemigo que van apareciendo lleguen al final del recorrido. para lograr eso se posibilita la creacion de torres que atacan a los enemigos.
 
 ===
 
