@@ -25,7 +25,6 @@ public class Money {
 			this.amount-= amount;
 			return true;
 		}else {
-			System.out.println( this.amount + " ERROR " + amount);
 			return false;
 		}
 	}
