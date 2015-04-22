@@ -40,7 +40,7 @@ Para hacer el juego nos decidimos por ultilizar el lenguaje JAVA junto con las l
 
 ===
 
-<h3>Limitaciones y Desiciones discutibles </h3>
+<h3>Limitaciones y Decisiones discutibles </h3>
 
 * A la hora de hacer la(s) clases que representaban los enemigos se nos ocurrieron 2 posibilidades, una era hacer una clase Unit con toda la implementacion y despues hacer 1 clase hijo por cada tipo de enemigo en donde inicilizaba todas las variables(como la dimension la vida o la velocidad), esto evitaba tener que pasar como parametros toda la informacion cada vez que se queria crear una tropa, pero iba a generar que tengamos muchas clases que lo unico que difieren es en la inicializacion de las variables.( esto tambien para la UnitUI).  La otra posibilidad era hacer una sola clase Unit y que a la hora de crearla en el constructor se le pase todos los parametros que la identificaban como un tipo determinado de enemigo. La solucion a la que llegamos fue crear una clase llamada UnitCreator que entre otras cosas recibia como parametro el ID de la tropa que tenia que crear y tiene un metodo para cada tipo de enemigo que le pasa todos los parametros a la clase Unit, de forma de que haya solo una clase Unit(y UnitUI) y que a la hora de crear un nuevo enemigo el codigo quede un poco mas limpio.
 * Una limitacion que tuvimos es que el juego solo esta diseñado para correr a un determinado tamaño de pantalla, al querer implementar la posiblidad de multiples resoluciones el manejo de la interfaz resultaba muy complejo.
